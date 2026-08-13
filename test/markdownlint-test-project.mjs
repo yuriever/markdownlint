@@ -19,7 +19,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
 
   test("projectFiles", (t) => {
     t.plan(2);
-    t.assert.equal(files.length, 62);
+    t.assert.equal(files.length, 63);
     const options = {
       files,
       "config": require("../.markdownlint.json")
@@ -43,7 +43,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       "doc/md036.md"
     ]);
     const filteredFiles = files.filter((file) => !ignoreFiles.has(file));
-    t.assert.equal(filteredFiles.length, 58);
+    t.assert.equal(filteredFiles.length, 59);
     const options = {
       "files": filteredFiles,
       "config": require("../.markdownlint.json"),
