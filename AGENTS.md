@@ -58,4 +58,4 @@ When modifying the parser or core behavior, preserve behavior in both Node.js an
 
 ## Convention
 
-<!-- markdownlint-configure-file { "ul-style": { "style": "asterisk" }, "ul-indent": { "indent": 4 } } -->
+<!-- markdownlint-configure-file { "line-length": false, "ul-style": { "style": "asterisk" }, "ul-indent": { "indent": 4 } } -->
