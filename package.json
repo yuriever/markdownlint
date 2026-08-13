@@ -76,7 +76,7 @@
     "micromark-extension-gfm-autolink-literal": "2.1.0",
     "micromark-extension-gfm-footnote": "2.1.0",
     "micromark-extension-gfm-table": "2.1.1",
-    "micromark-extension-math": "3.1.0",
+    "micromark-extension-math-extended": "github:yuriever/micromark-extension-math-extended#dc3bbf05460a79810af724c6d28995c09544f55a",
     "micromark-util-types": "2.0.2",
     "string-width": "8.2.2"
   },

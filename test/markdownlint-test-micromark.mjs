@@ -101,4 +101,10 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     t.assert.snapshot(stringifySafe(tokens));
   });
 
+  test("micromark math extension LaTeX environment syntax", (t) => {
+    t.plan(1);
+    const tokens = parse("\\begin{equation}\na\n=\nb\n\\end{equation}\n");
+    t.assert.equal(tokens[0].type, "mathFlow");
+  });
+
 });

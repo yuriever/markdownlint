@@ -8,4 +8,4 @@ export { directive, directiveHtml } from "micromark-extension-directive";
 export { gfmAutolinkLiteral, gfmAutolinkLiteralHtml } from "micromark-extension-gfm-autolink-literal";
 export { gfmFootnote, gfmFootnoteHtml } from "micromark-extension-gfm-footnote";
 export { gfmTable, gfmTableHtml } from "micromark-extension-gfm-table";
-export { math, mathHtml } from "micromark-extension-math";
+export { math, mathHtml } from "micromark-extension-math-extended/dev";
