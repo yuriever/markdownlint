@@ -24,6 +24,9 @@ This repository maintains the `markdownlint` library, built-in rules, parsers, c
 * `schema/build-config-schema.mjs`: rule option schemas and defaults.
 * `test/*.md`: scenario fixtures that use `{MD###}` to mark expected results.
 
+Keep rules as decoupled as possible. A rule's configuration and behavior should
+not affect how other rules parse or report the document.
+
 When modifying a built-in rule, update the implementation, registration or metadata, canonical documentation, and option schema as applicable.
 
 ### Parser and Core
