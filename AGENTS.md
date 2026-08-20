@@ -58,4 +58,11 @@ When modifying the parser or core behavior, preserve behavior in both Node.js an
 
 ## Convention
 
+* Naming
+    * Prefer singular forms for section headings, file and directory names.
+
+* Python
+    * Manage dependencies with `uv`.
+    * Run commands with `uv run <command>`.
+
 <!-- markdownlint-configure-file { "line-length": false, "ul-style": { "style": "asterisk" }, "ul-indent": { "indent": 4 } } -->
