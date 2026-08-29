@@ -10,3 +10,5 @@ npm-debug.log
 test-repos
 .DS_Store
 .vscode
+/.obsidian/
+/.trash/
