@@ -73,7 +73,4 @@ When modifying the parser or core behavior, preserve behavior in both Node.js an
 * Wolfram
     * Prefer file-based execution with `WolframKernel -script <file.wl>`.
 
-* Lean
-    * Manage toolchains with `elan`.
-
 <!-- markdownlint-configure-file { "line-length": false, "ul-style": { "style": "asterisk" }, "ul-indent": { "indent": 4 } } -->
