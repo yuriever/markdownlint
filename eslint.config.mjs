@@ -11,7 +11,6 @@ import eslintPluginRegexp from "eslint-plugin-regexp";
 import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 
-// eslint-disable-next-line unicorn/no-top-level-side-effects
 export default defineConfig(
   {
     "ignores": [
@@ -256,6 +255,9 @@ export default defineConfig(
     "files": [
       "**/package.json"
     ],
+    "ignores": [
+      "test/typescript/package.json"
+    ],
     "plugins": {
       "package-json": eslintPackageJson
     },
@@ -279,6 +281,9 @@ export default defineConfig(
   {
     "files": [
       "test/**/package.json"
+    ],
+    "ignores": [
+      "test/typescript/package.json"
     ],
     "rules": {
       "package-json/require-engines": "off"

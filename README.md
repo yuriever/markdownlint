@@ -225,6 +225,10 @@ comments (which are not rendered):
 - Capture the current rule configuration: `<!-- markdownlint-capture -->`
 - Restore the captured rule configuration: `<!-- markdownlint-restore -->`
 
+The entire HTML comment (including open and close tags) must occupy a single
+line. Other content can appear on the same line, but that is discouraged for
+clarity.
+
 For example:
 
 ```markdown
@@ -280,12 +284,16 @@ the following syntax is supported:
 - Disable one or more rules by name: `<!-- markdownlint-disable-file MD001 -->`
 - Enable one or more rules by name: `<!-- markdownlint-enable-file MD001 -->`
 
-This can be used to "hide" `markdownlint` comments at the bottom of a file.
+This can be used to "hide" `markdownlint` comments at the bottom of a file. As
+above, the entire comment must occupy a single line.
 
 In cases where it is desirable to change the configuration of one or
 more rules for a file, the following more advanced syntax is supported:
 
 - Configure: `<!-- markdownlint-configure-file { options.config JSON } -->`
+
+Unlike other inline comments, this comment may occupy multiple lines (as long as
+it remains a valid HTML comment).
 
 For example:
 
@@ -970,7 +978,7 @@ All of which return an object like:
     { "lineNumber": 3,
       "ruleNames": [ "MD010", "no-hard-tabs" ],
       "ruleDescription": "Hard tabs",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.42.0/doc/md010.md",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.42.2/doc/md010.md",
       "errorDetail": "Column: 17",
       "errorContext": null,
       "errorRange": [ 17, 1 ],
@@ -979,7 +987,7 @@ All of which return an object like:
     { "lineNumber": 1,
       "ruleNames": [ "MD018", "no-missing-space-atx" ],
       "ruleDescription": "No space after hash on atx style heading",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.42.0/doc/md018.md",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.42.2/doc/md018.md",
       "errorDetail": null,
       "errorContext": "#bad.md",
       "errorRange": [ 1, 2 ],
@@ -988,7 +996,7 @@ All of which return an object like:
     { "lineNumber": 3,
       "ruleNames": [ "MD018", "no-missing-space-atx" ],
       "ruleDescription": "No space after hash on atx style heading",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.42.0/doc/md018.md",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.42.2/doc/md018.md",
       "errorDetail": null,
       "errorContext": "#This file fails\tsome rules.",
       "errorRange": [ 1, 2 ],
@@ -997,7 +1005,7 @@ All of which return an object like:
     { "lineNumber": 1,
       "ruleNames": [ "MD041", "first-line-heading", "first-line-h1" ],
       "ruleDescription": "First line in a file should be a top-level heading",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.42.0/doc/md041.md",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.42.2/doc/md041.md",
       "errorDetail": null,
       "errorContext": "#bad.md",
       "errorRange": null,

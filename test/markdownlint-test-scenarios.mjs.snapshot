@@ -14004,6 +14004,48 @@ exports[`markdownlint-test-scenarios.mjs > empty-links.md 1`] = `
 {
   "errors": [
     {
+      "lineNumber": 27,
+      "ruleNames": [
+        "MD010",
+        "no-hard-tabs"
+      ],
+      "ruleDescription": "Hard tabs",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md010.md",
+      "errorDetail": "Column: 8",
+      "errorContext": null,
+      "errorRange": [
+        8,
+        2
+      ],
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 2,
+        "insertText": "  "
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 27,
+      "ruleNames": [
+        "MD010",
+        "no-hard-tabs"
+      ],
+      "ruleDescription": "Hard tabs",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md010.md",
+      "errorDetail": "Column: 14",
+      "errorContext": null,
+      "errorRange": [
+        14,
+        2
+      ],
+      "fixInfo": {
+        "editColumn": 14,
+        "deleteCount": 2,
+        "insertText": "  "
+      },
+      "severity": "error"
+    },
+    {
       "lineNumber": 5,
       "ruleNames": [
         "MD042",
@@ -14199,6 +14241,23 @@ exports[`markdownlint-test-scenarios.mjs > empty-links.md 1`] = `
       "ruleDescription": "No empty links",
       "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md042.md",
       "errorDetail": null,
+      "errorContext": "[text][\\t\\tfRAg\\t\\t]",
+      "errorRange": [
+        1,
+        16
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 29,
+      "ruleNames": [
+        "MD042",
+        "no-empty-links"
+      ],
+      "ruleDescription": "No empty links",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md042.md",
+      "errorDetail": null,
       "errorContext": "[frag][]",
       "errorRange": [
         1,
@@ -14208,7 +14267,7 @@ exports[`markdownlint-test-scenarios.mjs > empty-links.md 1`] = `
       "severity": "error"
     },
     {
-      "lineNumber": 29,
+      "lineNumber": 31,
       "ruleNames": [
         "MD042",
         "no-empty-links"
@@ -14225,24 +14284,7 @@ exports[`markdownlint-test-scenarios.mjs > empty-links.md 1`] = `
       "severity": "error"
     },
     {
-      "lineNumber": 74,
-      "ruleNames": [
-        "MD042",
-        "no-empty-links"
-      ],
-      "ruleDescription": "No empty links",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md042.md",
-      "errorDetail": null,
-      "errorContext": "[text]()",
-      "errorRange": [
-        1,
-        8
-      ],
-      "fixInfo": null,
-      "severity": "error"
-    },
-    {
-      "lineNumber": 78,
+      "lineNumber": 76,
       "ruleNames": [
         "MD042",
         "no-empty-links"
@@ -14276,7 +14318,7 @@ exports[`markdownlint-test-scenarios.mjs > empty-links.md 1`] = `
       "severity": "error"
     },
     {
-      "lineNumber": 83,
+      "lineNumber": 82,
       "ruleNames": [
         "MD042",
         "no-empty-links"
@@ -14294,6 +14336,23 @@ exports[`markdownlint-test-scenarios.mjs > empty-links.md 1`] = `
     },
     {
       "lineNumber": 85,
+      "ruleNames": [
+        "MD042",
+        "no-empty-links"
+      ],
+      "ruleDescription": "No empty links",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md042.md",
+      "errorDetail": null,
+      "errorContext": "[text]()",
+      "errorRange": [
+        1,
+        8
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 87,
       "ruleNames": [
         "MD042",
         "no-empty-links"
@@ -14336,6 +14395,8 @@ exports[`markdownlint-test-scenarios.mjs > empty-links.md 1`] = `
     "[text][frag] {MD042}",
     "",
     "[text][ frag ] {MD042}",
+    "",
+    "[text][  fRAg  ] {MD010} {MD042}",
     "",
     "[frag][] {MD042}",
     "",
@@ -33563,6 +33624,204 @@ exports[`markdownlint-test-scenarios.mjs > link-style-none.md 1`] = `
     "    \\"collapsed\\": false,",
     "    \\"shortcut\\": false",
     "  }",
+    "} -->",
+    ""
+  ]
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > link-style-normalization.md 1`] = `
+{
+  "errors": [
+    {
+      "lineNumber": 3,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[Link text][link label one]",
+      "errorRange": [
+        1,
+        27
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 5,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[link label one][]",
+      "errorRange": [
+        1,
+        18
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 7,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[link label one]",
+      "errorRange": [
+        1,
+        16
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 9,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[Link text][liNk lAbEl oNe]",
+      "errorRange": [
+        1,
+        27
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 11,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[ link  label  one ][]",
+      "errorRange": [
+        1,
+        22
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 13,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[linK\\tLabeL\\tOne]",
+      "errorRange": [
+        1,
+        16
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 17,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[Link text][link label two]",
+      "errorRange": [
+        1,
+        27
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 19,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[link label two][]",
+      "errorRange": [
+        1,
+        18
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 21,
+      "ruleNames": [
+        "MD054",
+        "link-image-style"
+      ],
+      "ruleDescription": "Link and image style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md054.md",
+      "errorDetail": null,
+      "errorContext": "[link label two]",
+      "errorRange": [
+        1,
+        16
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    }
+  ],
+  "fixed": [
+    "# Link Style Normalization",
+    "",
+    "[Link text][link label one] {MD054}",
+    "",
+    "[link label one][] {MD054}",
+    "",
+    "[link label one] {MD054}",
+    "",
+    "[Link text][liNk lAbEl oNe] {MD054}",
+    "",
+    "[ link  label  one ][] {MD054}",
+    "",
+    "[linK\\tLabeL\\tOne] {MD054}",
+    "",
+    "[link label one]: https://example.com",
+    "",
+    "[Link text][link label two] {MD054}",
+    "",
+    "[link label two][] {MD054}",
+    "",
+    "[link label two] {MD054}",
+    "",
+    "[ lINk  laBel\\t\\tTWO  ]: https://example.com",
+    "",
+    "<!-- markdownlint-configure-file {",
+    "  \\"link-image-style\\": {",
+    "    \\"autolink\\": false,",
+    "    \\"inline\\": false,",
+    "    \\"full\\": false,",
+    "    \\"collapsed\\": false,",
+    "    \\"shortcut\\": false",
+    "  },",
+    "  \\"no-hard-tabs\\": false,",
+    "  \\"no-space-in-links\\": false",
     "} -->",
     ""
   ]
@@ -53471,6 +53730,285 @@ exports[`markdownlint-test-scenarios.mjs > reference-links-and-images-ignored-la
     "    ],",
     "    \\"shortcut_syntax\\": true",
     "  }",
+    "} -->",
+    ""
+  ]
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > reference-links-and-images-inlines.md 1`] = `
+{
+  "errors": [
+    {
+      "lineNumber": 3,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"one\\"",
+      "errorContext": "[one][]",
+      "errorRange": [
+        1,
+        7
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 5,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"\`two\`\\"",
+      "errorContext": "[\`two\`][]",
+      "errorRange": [
+        1,
+        9
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 7,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"\` three \`\\"",
+      "errorContext": "[\` three \`][]",
+      "errorRange": [
+        1,
+        13
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 9,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"*four*\\"",
+      "errorContext": "[*four*][]",
+      "errorRange": [
+        1,
+        10
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 11,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"__five__\\"",
+      "errorContext": "[__five__][]",
+      "errorRange": [
+        1,
+        12
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 13,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"<b>six</b>\\"",
+      "errorContext": "[<b>six</b>][]",
+      "errorRange": [
+        1,
+        14
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 15,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"<b> seven </b>\\"",
+      "errorContext": "[<b> seven </b>][]",
+      "errorRange": [
+        1,
+        18
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 17,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"https://example.com/eight\\"",
+      "errorContext": "[https://example.com/eight][]",
+      "errorRange": [
+        1,
+        29
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 19,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"<https://example.com/nine>\\"",
+      "errorContext": "[<https://example.com/nine>][]",
+      "errorRange": [
+        1,
+        30
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 21,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"mailto:ten@example.com\\"",
+      "errorContext": "[mailto:ten@example.com][]",
+      "errorRange": [
+        1,
+        26
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 23,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"<mailto:eleven@example.com>\\"",
+      "errorContext": "[<mailto:eleven@example.com>][]",
+      "errorRange": [
+        1,
+        31
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 25,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"$cos(twelve)$\\"",
+      "errorContext": "[$cos(twelve)$][]",
+      "errorRange": [
+        1,
+        17
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 27,
+      "ruleNames": [
+        "MD052",
+        "reference-links-images"
+      ],
+      "ruleDescription": "Reference links and images should use a label that is defined",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md052.md",
+      "errorDetail": "Missing link or image reference definition: \\"$ cos(thirteen) $\\"",
+      "errorContext": "[$ cos(thirteen) $][]",
+      "errorRange": [
+        1,
+        21
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    }
+  ],
+  "fixed": [
+    "# Reference Links and Images (Inlines)",
+    "",
+    "[one][] {MD052}",
+    "",
+    "[\`two\`][] {MD052}",
+    "",
+    "[\` three \`][] {MD052}",
+    "",
+    "[*four*][] {MD052}",
+    "",
+    "[__five__][] {MD052}",
+    "",
+    "[<b>six</b>][] {MD052}",
+    "",
+    "[<b> seven </b>][] {MD052}",
+    "",
+    "[https://example.com/eight][] {MD052}",
+    "",
+    "[<https://example.com/nine>][] {MD052}",
+    "",
+    "[mailto:ten@example.com][] {MD052}",
+    "",
+    "[<mailto:eleven@example.com>][] {MD052}",
+    "",
+    "[$cos(twelve)$][] {MD052}",
+    "",
+    "[$ cos(thirteen) $][] {MD052}",
+    "",
+    "\`\`\`comment",
+    "[one]: file.md",
+    "[\`two\`]: file.md",
+    "[\` three \`]: file.md",
+    "[*four*]: file.md",
+    "[__five__]: file.md",
+    "[<b>six</b>]: file.md",
+    "[<b> seven </b>]: file.md",
+    "[https://example.com/eight]: file.md",
+    "[<https://example.com/nine>]: file.md",
+    "[mailto:ten@example.com]: file.md",
+    "[<mailto:eleven@example.com>]: file.md",
+    "[$cos(twelve)$]: file.md",
+    "[$ cos(thirteen) $]: file.md",
+    "\`\`\`",
+    "",
+    "<!-- markdownlint-configure-file {",
+    "  \\"no-inline-html\\": false,",
+    "  \\"no-space-in-code\\": false",
     "} -->",
     ""
   ]
