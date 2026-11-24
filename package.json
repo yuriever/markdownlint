@@ -71,7 +71,7 @@
     "micromark-extension-gfm-autolink-literal": "2.1.0",
     "micromark-extension-gfm-footnote": "2.1.0",
     "micromark-extension-gfm-table": "2.1.2",
-    "micromark-extension-math": "github:yuriever/micromark-extension-math-extended#251da2e5f83207a69f531e6c568d1ec4d20edc36",
+    "micromark-extension-math": "github:yuriever/micromark-extension-math-extended#0414ec981c0594ff2dee74d7b4bbbcd838971728",
     "micromark-util-types": "2.0.3",
     "micromark": "4.0.3",
     "re2js": "2.9.1",

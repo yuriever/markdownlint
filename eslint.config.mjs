@@ -279,6 +279,12 @@ export default defineConfig(
     }
   },
   {
+    "files": [ "package.json" ],
+    "rules": {
+      "package-json/no-git-dependencies": [ "error", { "allowWithRef": true } ]
+    }
+  },
+  {
     "files": [
       "test/**/package.json"
     ],
